@@ -1,20 +1,20 @@
+const menuToogle = document.querySelector('.hamburguer');
+const menu = document.querySelector('.navList');
 
-const show = document.getElementById('senha')
-const label = document.getElementById('label-password')
-const labelfloat = () => show.value.length > 0? label.classList.add('active'):label.classList.remove('active')
-document.body.addEventListener('click', labelfloat)
-
-document.querySelector('.show-password').addEventListener('click', () =>{
-    const show = document.getElementById('senha');
-    const actual = show.getAttribute("type");
-    if(actual === "password"){
-        document.querySelector('.show-password').innerHTML = 'OCULTAR';
-        show.setAttribute("type", "text")
-    }
-    else{
-        document.querySelector('.show-password').innerHTML = 'MOSTRAR';
-        show.setAttribute("type", "password")
-    }
+menuToogle.addEventListener('click', () =>{
+    menuToogle.classList.toggle('active')
+    menu.classList.toggle('active')
 })
 
+document.querySelectorAll('.navList li')
+.forEach((item) => item.addEventListener('click', () =>{
+    menuToogle.classList.remove('active')
+    menu.classList.remove('active')
+})) 
 
+
+addEventListener("scroll", () =>{
+    const header = document.querySelector("header")
+    const posY = window.scrollY;
+    posY > 10? header.style.backgroundColor = "#141414" : header.style.backgroundColor = "transparent";
+})
