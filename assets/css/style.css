@@ -38,6 +38,8 @@ html,body{
 .container{
     max-width: 1200px;
     margin: auto;
+    background-color: transparent;
+
 }
 h1{
     color: var(--text-color);
@@ -46,7 +48,6 @@ h1{
     text-align: center;
 
 }
-
 .header{
     display: flex;
     justify-content: space-between;
@@ -64,10 +65,9 @@ h1{
     margin-top: 30px;
 }
 .btn:hover{
-    background-color: #000;
+    background-color: var(--text-second-color);
     color: #fff;
     box-shadow: 0 0 10px var(--text-menu-color);
-
 }
 .logo{
     z-index: 2;
@@ -91,7 +91,6 @@ h1{
 .navList li a:hover{
     color: var(--text-menu-color);
 }
-
 .hamburguer{
     display: none;
     cursor: pointer;
@@ -99,7 +98,7 @@ h1{
 .line{
     width: 36px;
     height: 6px;
-    margin-top: 5px;
+    margin: 5px 0;
     background-color: var(--text-color);
     border-radius: 5px;
     transition: 0.5s all;
@@ -107,7 +106,7 @@ h1{
 
 /* HOME */
 #main{
-    background-color: #141414;
+    background-color: var(--bg-color);
     background-image: url(/assets/img/bg.jpg);
     background-position: center;
     background-size: cover;
@@ -149,7 +148,6 @@ h1{
 }
 
 footer{
-    background-color: var(--text-second-color);
     margin-top: 130px;
     text-align: center;
 }
@@ -162,7 +160,7 @@ footer .container{
         padding: 0px 30px;
     }
    header{
-       padding: 15px 0;
+       padding: 10px 0;
    }
     .navList{
         position: absolute;
@@ -171,7 +169,7 @@ footer .container{
         right: 0;
         flex-direction: column;
         text-align: center;
-        transition: 0.3s all;
+        transition: 0.3s ease-in-out;
         height: 100vh;
         justify-content: center;
         align-items: center;
@@ -183,6 +181,7 @@ footer .container{
         top: 0;
         left: 0;
         background-color: var(--text-second-color);
+        transition: 0.3s ease-in;
     }
     .hamburguer{
         display: block;
