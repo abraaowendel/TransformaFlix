@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    
+ 
     <title>TransformaFlix</title>
 </head>
 <body>
@@ -28,7 +33,6 @@
                 </div>
             </div>
         </header>
-
         <section id="main">
             <div class="container">
                 <h1>Assista suas séries, filmes e desenhos favoritos.</h1>
@@ -37,17 +41,20 @@
         </section>
         <section id="series" class="container">
             <h2 class="title-categories">Séries</h2>
-            <div class="cards"></div>
+            <div class="owl-carousel owl-theme"></div>
         </section>
         <section id="filmes" class="container">
             <h2 class="title-categories">Filmes</h2>
-            <div class="cards"></div>
+            <div class="owl-carousel owl-theme"></div>
+
         </section>
         <section id="desenhos" class="container">
             <h2 class="title-categories">Desenhos</h2>
-            <div class="cards"></div>
+            <div class="owl-carousel owl-theme"></div>
+
         </section>
     </main>
+    
     <footer>
         <div class="container">
             <img src="./assets/img/logo.svg" alt="">
@@ -59,8 +66,31 @@
             </ul>
         </div>
     </footer>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/JSON.js"></script>
-    <script src="./assets/js/main.js"></script>   
+
+    <script src="/assets/js/menu.js"></script>   
+    <script src="/assets/js/JSON.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    </script>
 </body>
 </html>

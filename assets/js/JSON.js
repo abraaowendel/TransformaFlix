@@ -7,14 +7,20 @@ const catalogo = [
       {titulo:"VENOM Tempo de Carnificina", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/h5UzYZquMwO9FVn15R2eK2itmHu.jpg"},
       {titulo:"MATRIX", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9DT4WVqZqBEI9Kub18gZ3m1D89m.jpg"},
       {titulo:"Shang-Chi e a Lenda dos Dez Anéis", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ArrOBeio968bUuUOtEpKa1teIh4.jpg"},
+   
     ],
    series:[
-      {titulo:"PEAKY BLINDERS",url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i0uajcHH9yogXMfDHpOXexIukG9.jpg" },
+      {titulo:"PEAKY BLINDERS", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i0uajcHH9yogXMfDHpOXexIukG9.jpg" },
       {titulo:"EUPHORIA", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg"},
       {titulo:"THE FLASH", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg"},
       {titulo:"LUCIFER", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hdKxcoV5CFc3sGOmbGXDXbx1cTZ.jpg"},
       {titulo:"SUITS", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ubEYUaE1EOBnSgb1OteAeGJP1E5.jpg"},
-      {titulo:"THE GOOD DOCTOR", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jtLB7xJKcbekmOYkb5NZditBsgk.jpg"}
+      {titulo:"THE GOOD DOCTOR", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jtLB7xJKcbekmOYkb5NZditBsgk.jpg"}, 
+      {titulo:"A Anatomia de Grey", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tWtGNTJUAuiM2O9wv0jejw45Sji.jpg"},
+      {titulo:"Game of Thrones ", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3pLLMbM33SBGrade4TuahCP1sdJ.jpg"},
+      {titulo:"Desejo Sombrio", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7nBrKoiH3vXFQtxJmM3v5cRMdpj.jpg"},
+      {titulo:"Vikings: Valhalla ", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/izIMqapegdEZj0YVDyFATPR8adh.jpg"},
+      
     ]
      ,
     desenhos:[
@@ -24,6 +30,10 @@ const catalogo = [
       {titulo:"ONE PIECE", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/goKUd5y4lHU3qkW0XKKxmNSNcem.jpg"},
       {titulo:"SLAM DUNK", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qn0t5cXkEwjLKeanXLXJHZYQyRb.jpg"},
       {titulo:"OS CAVALEIROS DO ZODÍACO", url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lGuI2iBUowwfG0pjJi7rEviZ5xs.jpg"},
+      {titulo:"", url: ""},
+      {titulo:"", url: ""},
+      {titulo:"", url: ""},
+      {titulo:"", url: ""},
     ]  
   },
 ]
