@@ -64,13 +64,13 @@ h1{
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
-    color: #141414;
+    color: var(--bg-color);
     transition: 0.6s all;
     margin-top: 30px;
 }
 .btn:hover{
     background-color: var(--text-second-color);
-    color: #fff;
+    color: var(--text-color);
     box-shadow: 0 0 10px var(--text-menu-color);
 }
 .logo{
@@ -82,7 +82,7 @@ h1{
 }
 .navList li a{
     padding: 0 15px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .navList li a{
@@ -125,38 +125,48 @@ h1{
     align-items: center;
     height: 100%;
 }
+
 .owl-carousel{
   display: flex;
   transition: .3s ease all;
 }
 .item{
-    width: 250px;
-    height: 400px;
+    max-width: 400px;
     cursor: pointer;
+    transition: 0.3s ease-in;
+    margin: 0 20px;
 }
 .item img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 .item:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.3s ease-in;
 }
 .title-categories{
-    padding-top: 30px;
-    margin-bottom: 25px;
+    margin: 25px 0;
     color: var(--text-color);
+}
+#series .title-categories{
+    padding-top: 40px;
+}
+#desenhos {
+    padding-bottom: 40px;
 }
 .owl-next span,.owl-prev span{
     position: absolute;
-    color: #BA0001;
+    color: var(--text-color);
     font-size: 5em;
-    top: 150px;
+    padding: 0 5px;
+    text-shadow: 5px 5px 5px var(--text-second-color);
+    top: 110px;
+}
+.owl-dot.active span{
+    background-color: var(--text-menu-color) !important;
 }
 .owl-prev span{
     left: 0;
-
 }
 .owl-next span{
     right: 0;
@@ -170,8 +180,23 @@ footer .container{
     padding: 50px 0;
 }
 footer p{
-    font-size: 14px;
     color: var(--text-color);
+}
+.media{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.media li{
+    margin: 0 8px;
+}
+svg path{
+    transition: 0.3s ease-in all;
+
+}
+svg:hover path{
+    transition: 0.3s ease all;
+    fill: var(--bg-color);
 }
 
 @media (max-width: 992px){
@@ -219,11 +244,30 @@ footer p{
     .container{
         padding: 0 20px;
     }
-
+   
+    .item{
+        object-fit: cover;
+    }
+    .owl-theme .owl-nav{
+        margin: 0;
+    }
+    .owl-dot, .owl-dot span{
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 5px;
+    }
+    
 }
+
 @media (max-width: 480px){
     h1{
         font-size: 1.9em;
+    }
+    .item{
+        max-width: 300px;
+        height: 350px;
+        text-align: center;
+        margin: auto;
     }
 
 }
